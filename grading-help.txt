@@ -1,0 +1,12 @@
+- not a game!
+- use chrome or ie or opera for best experience
+- uses html canvas to make our logo pretty
+- uses css extensively to make a layout fluid
+- uses DOM manipulation to insert content dynamically
+- uses AJAX to fetch music and biography content
+- makes heavy use of jquery for DOM manipulation
+- follows style guidlines to a T
+- very subtle design philosophy using google and last.fm as influences
+- made for any size screen using foundation by 
+- track preview works best in chrome since firefox does not support mp3's in html-5
+- no sever side computation

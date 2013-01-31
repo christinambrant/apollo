@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="stylesheets/apollo.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+    <div class="on" id="searchpage">
+
+        <div id="logo">
+        	<div id="logoNotes" class="over">
+                <img src="images/apollo_logo_1c_fade.png" onMouseOver="logoHover();">
+            </div>
+            <div id="logoBlue" class="under">
+                <img src="images/apollo_logo_blue_1c_fade.png" onmouseover="logoHover();">
+            </div>
+        </div>
+
+        <div id="instructions">
+            <img src="images/instructions_light_blue_1f.png" alt="">
+        </div>
+
+    	<div id="searchbar">
+    		<form class="form-search" id="artist_search">
+    			<input id="main_artist_searchpage" type="text" class="input-medium search-query" onKeydown="javascript: if (event.keyCode==13) goDiscover();" placeholder="Search your favorite artists...">
+    		</form>
+    	</div>
+
+
+
+        <div id="searchButton">
+            <div class="has-button">
+                <button class="btn btn-info btn-custom" type="button" onclick="goDiscover()">Discover</button>
+            </div>
+            <div class="has-button">
+                <button class="btn btn-info btn-custom" type="button" onclick="goMarketplace()">Marketplace</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="off row-fluid" id="center">
+        <div class="container_top-bar span12">
+            <div class="span3">
+                <img id="topbar_logo" src="images/apollo_logo_blue_layers_fade_1g.png">
+            </div>
+
+            <div id="topbar_search_container" class="span7">
+                <form id="topbar_form">
+                    <input class="input-medium search-query" onKeydown="javascript: if (event.keyCode==13) goDiscover();" placeholder="Search your favorite artists..." id="search_topbar">
+                </form>
+            </div>
+
+            <div class="span1" id="topbar_button-container">
+                <button class="btn btn-info btn-custom" type="button" onclick="goDiscover()" id="topbar_button">Search</button>
+            </div>
+        </div>
+
+        <div class="off row-fluid" id="discovery">
+            <div class="span12">
+                <div class="span3 sidebar">
+                    <ul class="nav nav-pills nav-stacked blue">
+                        <li class="active">
+                            <a>Discover</a>
+                        </li>
+                        <li>
+                            <a>Spotlight</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row-fluid">
+                    <div class="span8" id="similar_artist-container">
+                        <h1>Artists Similar to...</h1> <h1 id="main_artist_name"></h1>
+                        <div class="row-fluid">
+                            <div class="span4">
+                                <div class="similar_artists"> </div>
+                            </div>
+                            <div class="span4">
+                                <div class="similar_artists"> </div>
+                            </div>
+                            <div class="span4">
+                                <div class="similar_artists"> </div>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span4">
+                                <div class="similar_artists"> </div>
+                            </div>
+                            <div class="span4">
+                                <div class="similar_artists"> </div>
+                            </div>
+                            <div class="span4">
+                                <div class="similar_artists"> </div>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span4">
+                                <div class="similar_artists"> </div>
+                            </div>
+                            <div class="span4">
+                                <div class="similar_artists"> </div>
+                            </div>
+                            <div class="span4">
+                                <div class="similar_artists"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="mySoundClip">
+      <source src="music/Minuet-in-G.mp3" type="audio/mp3"/>
+    </audio>
+
+	<script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/apollo.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <!-- <script src="javascripts/canvas.js"></script> -->
+</body>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css">
+    <link rel="stylesheet" href="stylesheets/apollo.css">
+</head>
+
+<body>
+
+    <div class="on" id="searchpage">
+        <div class="row" id="logo">
+            <img src="images/logo.png" alt="">
+            <canvas id="myCanvas" width="132" height="132">
+            </canvas>
+        </div>
+
+        <div class="row" id="searchbar">
+            <div id="artist_search">
+                <input name="main_artist_searchpage" id="main_artist_searchpage" type="search" onKeydown="javascript: if (event.keyCode==13) goDiscover();">
+                </input>
+            </div>
+        </div>
+
+        <div class="row" id="searchButton">
+            <div class="has-button">
+                <a class="large button" onclick="goDiscover()"> Discover </a>
+            </div>
+            
+            <div class="has-button">
+                <a class="large button" onclick="goMarketplace()"> Marketplace </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="off" id="center">
+        <div class="container_top-bar">
+            <nav class="top-bar">
+                <ul>
+                    <li class="name">
+                        <h1>
+                            <a> <p id="main_title"> Apollo </p> </a>
+                        </h1>
+                    </li>
+              </ul>
+              <section>
+                <ul class="left">
+                     <li>
+                        <a id="sub_title" onclick="discoveryOn()"> Discovery </a>
+                    </li>
+                </ul>
+                <ul class="left">
+                    <li>
+                        <a id="sub_title" onclick="marketPlaceOn()"> Market </a>
+                    </li>
+                </ul>
+
+                <ul class="right">
+                    <li class="search">
+                      <div id="artist_search">
+                        <input name="main_artist_search" id= "main_artist_search" type="search" onKeydown="javascript: if (event.keyCode==13) getfromHTML();"> </input>
+                      </div>
+                    </li>
+                    <li class="has-button">
+                      <a class="small button" href="#" onclick="getfromHTML()"> Search </a>
+                    </li>
+                </ul>
+                
+              </section>
+            </nav>
+        </div>
+
+        <div class="off" id="discovery">
+        
+            <div class="six columns">
+                <div class="main_artist">
+                    <div class="row">
+                            <h1 id="main_artist_name"> </h1>
+                    </div>
+                    <div class="row" id="main_image">
+                        <div id="main_artist_image">
+                        </div>
+                        <div id="genre_container">
+                            <h4 id="genre"> <h4>
+                        </div>
+                    </div>
+
+                     <div class="row" id="artist_bio">
+                         <p id="bio_text"></p>
+                    </div>
+
+                    <table class="tracks">
+                        <tbody id="track_list">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="six columns" id="similar">
+                <div class="row">
+                    <div class="six columns">
+                        <div class="similar_artists"> </div>
+                    </div>
+                    
+                    <div class="six columns">
+                        <div class="similar_artists"> </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="six columns">
+                        <div class="similar_artists"> </div>
+                    </div>
+                    <div class="six columns">
+                        <div class="similar_artists"> </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="six columns">
+                        <div class="similar_artists"> </div>
+                    </div>
+                    <div class="six columns">
+                        <div class="similar_artists"> </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="six columns">
+                        <div class="similar_artists"> </div>
+                    </div>
+                    <div class="six columns">
+                        <div class="similar_artists"> </div>
+                    </div>
+                </div>
+                
+            </div>
+         </div>
+
+        <div class="off" id="marketplace">
+            <div class="row" id="artist_name">
+                <h1 id="artist_name_market">
+                </h1>
+            </div>
+            <div class="twelve columns">
+                <div class="row" id="albums">
+                </div>
+                <div class="row">
+                    <a id="album_title"> </a>
+                </div>
+                <div class="row" id="album_tracks">
+                    <table>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/apollo.js"></script>
+    <script src="javascripts/foundation.min.js"></script>
+    <script src="javascripts/canvas.js"></script>
+</body>

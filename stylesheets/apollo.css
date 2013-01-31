@@ -1,0 +1,385 @@
+#searchpage{
+	text-align: center;
+}
+
+#searchpage .has-button {
+	display: inline-block;
+}
+
+#searchpage .button {
+	background: none repeat scroll 0% 0% #893BFF;
+	border-color: #893BFF;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#searchpage .button:hover {
+	background: none repeat scroll 0% 0% #893BFF;
+	background-color: #893BFF;
+	border-color: #893BFF;
+	color: #000000;
+}
+
+.btn-custom {
+  background-color: hsl(216, 62%, 36%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4980d4", endColorstr="#225094");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#4980d4), to(#225094));
+  background-image: -moz-linear-gradient(top, #4980d4, #225094);
+  background-image: -ms-linear-gradient(top, #4980d4, #225094);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4980d4), color-stop(100%, #225094));
+  background-image: -webkit-linear-gradient(top, #4980d4, #225094);
+  background-image: -o-linear-gradient(top, #4980d4, #225094);
+  background-image: linear-gradient(#4980d4, #225094);
+  border-color: #225094 #225094 hsl(216, 62%, 31%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+  font-family: Open Sans;
+}
+
+#logo{
+	position: relative;
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10%;
+	margin-bottom: 0px;
+	overflow: hidden;
+	width: 750px;
+	height: 104px;
+}
+
+#logo img {
+	display: inline-block;
+}
+
+.under {
+	position: relative;
+	left:0px;
+	top:-103px;
+	z-index: -1;
+}
+
+.over {
+	position:relative;
+	left:0px;
+	top:0px;
+	opacity: 0;
+}
+
+#logoNotes {
+    -webkit-transition: opacity 2.5s ease-in; 
+    /*for chrome, safari*/
+    -moz-transition: opacity 2.5s ease-in; 
+    /*for mozilla firefox*/
+    -o-transition: opacity 2.5s ease-in; 
+    /*for opera*/
+}
+
+#searchbar {
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+#main_artist_searchpage {
+	width: 50%;
+}
+
+#searchButton {
+	margin-bottom: 50px;
+}
+
+#instructions {
+	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+}
+
+#search_topbar {
+	margin-top: 15px;
+	display: inline-block;
+	width:90%;
+}
+
+#topbar_logo {
+	width: 100%;
+	margin-top: 3px;
+	display: inline-block;
+}
+
+#topbar_search_container {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#topbar_form {
+	width:100%;
+	display: inline-block;
+	margin-left: -30px;
+}
+
+#topbar_button-container {
+	display: inline-block;
+	margin-left: -5px;
+}
+
+#topbar_button {
+	margin-top: 12px;
+}
+
+#similar_artist-container {
+	margin-left: -33px;
+}
+
+body {
+	background-image: url("../images/groovepaper_@2X.png");
+	z-index: -5;
+}
+
+.sidebar {
+	margin-top: 60px;
+}
+
+.sidebar li{
+	width: 75%;
+}
+
+.blue .active a,
+.blue .active a:hover {
+    background-color: #4980d4;
+    opacity: .4;
+    font-family: Open Sans;
+}
+       
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: #4980d4;
+    opacity: .4;
+    font-family: Open Sans;
+}
+
+.nav-pills {
+	font-family: Open Sans;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.container_top-bar {
+	height:55px;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+}
+
+.left:hover a {
+	background-color: #3E3535;
+}
+
+.top-bar {
+	background-color: #000000;
+}
+
+.right {
+	overflow: hidden;
+}
+
+.button {
+	background: none repeat scroll 0% 0% #893BFF;
+	border-color: #893BFF;
+}
+
+.right .button:hover {
+	background: none repeat scroll 0% 0% #893BFF;
+	color: #893BFF;
+	background-color: #893BFF;
+	border-color: #893BFF;
+}
+
+.top-bar ul > li.has-button:hover {
+	background: none repeat scroll 0% 0% #000000;
+}
+
+.top-bar ul > li.search:hover {
+	background: none repeat scroll 0% 0% #000000;
+}
+
+#main_title {
+	font-size: 25px;
+}
+
+#sub_title {
+	font-size: 15px;
+}
+
+#big_container {
+	height: 100%;
+}
+
+.row {
+	position: relative;
+}
+
+.main_artist {
+	border-width: 1px;
+	border-color: #C0C0C0;
+	border-style: solid;
+
+	background-color: #C0C0C0;
+
+	width: 100%;
+	min-height: 500px;
+
+	margin-bottom: 5px;
+
+	overflow: hidden;
+}
+
+#main_image {
+
+	overflow: hidden;
+}
+
+#genre_container {
+	display: inline;
+	position: absolute;
+	top: 0%;
+	left: 55%;
+}
+
+#main_artist_name, #similar_artist-container h1 {
+	display: inline-block;
+	font-family: Open Sans Condensed;
+	font-weight: 700;
+}
+
+#main_artist_image {
+	display: inline-block;
+	margin-left: 5px;
+	width: 50%;
+	height: 200px;
+}
+
+#main_artist_image img {
+	width: 100%;
+	max-height: 300px;
+	min-height: 200px;
+}
+
+#main_artist_search {
+	margin-top: 7px;
+}
+
+.main_artist h1 {
+	text-align: center;
+}
+
+.main_artist p {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.row {
+	width:auto;
+	min-width: 0;
+}
+
+.tracks table tbody tr embed {
+
+	width:inherit;
+
+}
+
+.tracks {
+
+	background: #C0C0C0;
+	border-color: #C0C0C0;
+	margin-left: 5px;
+	width: inherit;
+}
+
+.similar_artists {
+	position: relative;
+	display: block;
+
+	border-width: 1px;
+	border-color: #C0C0C0;
+	border-style: solid;
+
+	width:100%;
+	height: 250px;
+
+	margin-bottom: 5px;
+
+	overflow: hidden;
+}
+
+.similar_artists img {
+	width: 100%;
+	height: inherit;
+}
+
+.similar_artists p {
+	position: absolute;
+	left: 5%;
+	top: 10%;
+
+	color: #FFFFFF;
+	text-align: center;
+
+	display:inline;
+
+	visibility: hidden;
+}
+
+.similar_artists:hover img {
+	opacity:.5;
+}
+
+.similar_artists:hover {
+	background-color: #151B54;
+}
+
+.similar_artists:hover p {
+	visibility: visible;
+}
+
+.similar_artists:active {
+	margin-top: 3px;
+	margin-bottom: -3px;
+}
+
+.on {
+	display: block;
+}
+
+.off {
+	display: none;
+}
+
+#marketplace .row {
+	display:block;
+	text-align: center;
+	position: relative;
+}
+
+.three {
+	height: 275px;
+}
+
+#albums img:active {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+#artist_name_market {
+	display:inline-block;
+}
+
+canvas {
+    display: inline;
+}
