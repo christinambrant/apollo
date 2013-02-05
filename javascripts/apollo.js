@@ -6,6 +6,39 @@ window.digital_artist_id;
 window.previous_artist;
 window.previous_state;
 
+
+
+
+
+// PAGE NAVIGATIONS
+
+//makes discovery div viewable and hides others
+function discoveryOn()
+{
+    var discoveryDiv = $('#discovery');
+    var marketplaceDiv = $('#marketplace');
+    discoveryDiv.attr('class','on');
+    marketplaceDiv.attr('class','off');
+    discoveryDiv.css('display','block');
+    marketplaceDiv.css('display','none');
+    window.previous_state = 'discovery';
+}
+
+//hides discovery div and makes market place visible
+function marketPlaceOn() {
+    var discoveryDiv = $('#discovery');
+    var marketplaceDiv = $('#marketplace');
+    discoveryDiv.attr('class','off');
+    marketplaceDiv.attr('class','on');
+    discoveryDiv.css('display','none');
+    marketplaceDiv.css('display','block');
+    window.previous_state = 'marketplace';
+}
+
+function homeOn() {
+
+}
+
 function logoHover() {
     $("#mySoundClip")[0].play();
 }
@@ -40,17 +73,7 @@ function goDiscover()
     }
 }
 
-//makes discovery div viewable and hides others
-function discoveryOn()
-{
-    var discoveryDiv = $('#discovery');
-    var marketplaceDiv = $('#marketplace');
-    discoveryDiv.attr('class','on');
-    marketplaceDiv.attr('class','off');
-    discoveryDiv.css('display','block');
-    marketplaceDiv.css('display','none');
-    window.previous_state = 'discovery';
-}
+
 
 //takes inputted artist name, formates it and begins populating discoverty div
 function store_artist(artist_name)
@@ -433,15 +456,4 @@ function getPreviews(tracks) {
         }
         xml_obj.send();
     }
-}
-
-//hides discovery div and makes market place visible
-function marketPlaceOn() {
-    var discoveryDiv = $('#discovery');
-    var marketplaceDiv = $('#marketplace');
-    discoveryDiv.attr('class','off');
-    marketplaceDiv.attr('class','on');
-    discoveryDiv.css('display','none');
-    marketplaceDiv.css('display','block');
-    window.previous_state = 'marketplace';
 }
